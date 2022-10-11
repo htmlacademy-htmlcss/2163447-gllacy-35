@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-400.woff2") format("woff2");
+  src: url(../fonts/inter-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/inter-700.woff2") format("woff2");
+  src: url(../fonts/inter-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -18,12 +18,11 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/inter-900.woff2") format("woff2");
+  src: url(../fonts/inter-900.woff2) format("woff2");
   font-display: swap;
 }
 
 body {
-  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -62,23 +61,26 @@ body {
   background-color: #feafc3;
 }
 
-.navigation-link {
+.navigation-item .navigation-link {
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
 }
-
-.phone-link {
+.navigation-item:first-child {
   font-weight: 700;
   color: inherit;
   text-decoration: none;
 }
 
-.inner-navigation-link {
+.catalog-submenu-item a {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
   text-decoration: none;
+}
+
+.main-index {
+  background-size: 100% auto;
 }
 
 .slider {
@@ -98,7 +100,7 @@ body {
   line-height: 24px;
 }
 
-.slider-slide-button {
+.slider-slide-content a {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -131,15 +133,9 @@ body {
   line-height: 22px;
 }
 
-.offer-button {
+.offers a {
   color: #2d3440;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  text-align: center;
-  background: #fcfcfc;
-  border-radius: 26px;
 }
 
 .goods {
@@ -177,7 +173,7 @@ body {
 .advantages {
   color: #2d3440;
   background-color: #ffffff;
-  background-image: url("../images/background/vaffle.png");
+  background-image: url(..//images/background/vaffle.png);
 }
 
 .advantages-title {
@@ -198,7 +194,7 @@ body {
 .news {
   color: #565c66;
   background-color: #ffffff;
-  background-image: url("../images/background/news.png");
+  background-image: url(..//images/background/news.png);
 }
 
 .news-title {
@@ -225,7 +221,7 @@ body {
 .delivery {
   color: #2d3440;
   background-color: #ffffff;
-  background-image: url("../images/background/delivery.png");
+  background-image: url(..//images/background/delivery.png);
 }
 
 .delivery-title {
@@ -266,7 +262,7 @@ body {
 .contacts {
   color: #2d3440;
   background-color: #ffffff;
-  background-image: url("../images/background/feedback.png");
+  background-image: url(..//images/background/feedback.png);
 }
 
 .contacts-content {
@@ -277,7 +273,7 @@ body {
   background-color: #fcfcfc;
 }
 
-.contacts-phone {
+.contacts-content a {
   color: #2d3440;
   text-decoration: none;
 }
@@ -295,12 +291,12 @@ body {
   line-height: 20px;
 }
 
-.footer-content {
+.footer-information a {
   color: #2d3440;
   text-decoration: none;
 }
 
-.footer-for-suppliers {
+.footer-information:first-of-type {
   font-weight: 700;
   font-size: inherit;
 }
@@ -310,7 +306,7 @@ body {
   line-height: 16px;
 }
 
-.html-academy-link {
+.htmlacademy-link {
   color: #2d3440;
 }
 
@@ -323,11 +319,10 @@ body {
 
 .breadcrumbs-link {
   color: inherit;
-  text-decoration: none;
 }
 
-.breadcrumbs-item:last-child {
-  text-decoration: underline;
+.breadcrumbs a:first-of-type {
+  text-decoration: none;
 }
 
 .creamy-ice {
@@ -357,6 +352,7 @@ body {
 }
 
 .pagination-current {
+  color: inherit;
   background: #fcfcfc;
   border-radius: 50px;
 }
