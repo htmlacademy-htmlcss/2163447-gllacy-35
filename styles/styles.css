@@ -50,7 +50,6 @@ html {
 }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -116,7 +115,7 @@ body {
   width: 422px;
   height: 36px;
   margin: 0 0 34.14px 0;
-  list-style: none;
+  list-style-type: none;
   padding: 8px 16px;
   justify-content: space-between;
 }
@@ -137,20 +136,25 @@ body {
   font-size: 16px;
   width: 117px;
   height: 20px;
-  margin: 0 16px 34.14px 16px;
+  margin: 0 0 34.14px 0;
 }
 
 .inner-navigation {
-  list-style: none;
-
+  width: 135px;
   border-radius: 4px;
+  padding: 8px 0;
 }
 
 .inner-navigation-item {
-
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+}
 
 .inner-navigation-link {
-
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .navigation-link {
@@ -382,7 +386,6 @@ body {
 }
 
 .goods-list {
-  display: flex;
   color: #2d3440;
   list-style: none;
 }
@@ -520,6 +523,12 @@ body {
   line-height: 20px;
   width: 156px;
   margin: 0 0 14px 0;
+  padding: 14px 160px 14px 16px;
+}
+
+.button-submit {
+  padding: 12px 32px;
+  margin-left: 32px;
 }
 
 .delivery {
@@ -740,16 +749,23 @@ body {
 
 .breadcrumbs {
   width: 335px;
+  height: 20px;
+  list-style: none;
   display: flex;
   justify-content: space-between;
+  margin: 0 0 16px 0;
+  margin-right: 0 auto;
+}
+
+.breadcrumbs-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
-  list-style: none;
 }
 
 .breadcrumbs-link {
+  display: block;
   color: inherit;
   text-decoration: none;
 }
@@ -764,26 +780,65 @@ body {
   font-size: 32px;
   line-height: 46px;
   color: #2d3440;
+  margin: 0 0 40px 0;
+  text-align: left;
+}
+
+.creamy-ice-filter {
+  width: 823px;
+  margin: 40px 445px 44px 0;
 }
 
 .filter-group {
-  width: 823px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: inherit;
 }
 
-.pagination {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #2d3440;
+.filter-button {
+  width: 185px;
+  border-radius: 20px;
+  padding: 8px 32px;
+  margin: 0 0 46px 0;
+}
+
+.pagination-container {
+  display: flex;
+  height: 126px;
+}
+
+.pagination-show-more {
+  display: block;
+  margin-left: 585px;
+  width: 179px;
+  padding: 12px 32px;
+  border-radius: 26px;
+  height: 44px;
+}
+
+.pagination-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0 0 51px 0;
+  margin-left: auto;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 13px;
 }
 
 .pagination-link {
+  display: block;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 20px;
   color: #2d3440;
   text-decoration: none;
+}
+
+.pagination-clear {
+  background-color: transparent;
 }
 
 .pagination-current {
