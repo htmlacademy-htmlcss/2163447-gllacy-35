@@ -80,7 +80,6 @@ body {
 
 .button-submit {
   width: 152px;
-  height: 44px;
   color: #fcfcfc;
   background-color: #ff2f64;
   border-radius: 26px;
@@ -97,24 +96,23 @@ body {
 
 .navigation {
   width: 1170px;
-  height: 103.72px;
-  padding: 24px 0 24px 0;
+  height: 104px;
+  padding: 24px 0 25px 0;
   display: flex;
-  gap: 198px;
+  margin: 0 98px 0 98px;
 }
 
 .header-logo {
   display: block;
   width: 137px;
-  height: 55.72px;
-  margin: 0 16px 24.28px 98px;
+  margin: 0 16px 0 0;
 }
 
 .navigation-list {
   display: flex;
   width: 422px;
   height: 36px;
-  margin: 0 0 34.14px 0;
+  margin: 0 0 34px 0;
   list-style-type: none;
   padding: 8px 16px;
   justify-content: space-between;
@@ -123,7 +121,7 @@ body {
 .navigation-item {
   display: block;
   max-width: 147px;
-  margin: 0 0 42.14px 0;
+  margin: 0 0 42px 0;
   font-weight: 400px;
   font-size: 16px;
   line-height: 20px;
@@ -136,7 +134,7 @@ body {
   font-size: 16px;
   width: 117px;
   height: 20px;
-  margin: 0 0 34.14px 0;
+  margin: 0 0 34px 0;
 }
 
 .inner-navigation {
@@ -164,19 +162,19 @@ body {
   max-width: 147px;
   color: #2d3440;
   text-decoration: none;
-  margin: 0 0 42.14px 0;
+  margin: 0 0 42px 0;
 }
 
 .navigation-user-block {
   height: 32px;
   gap: 16px;
   width: 431px;
-  margin: 0 16px 36.14px 16px;
+  margin: 0 16px 36px 16px;
   justify-content: space-between;
 }
 
 .navigation-user {
-  margin: 0 0 42.14px 0;
+  margin: 0 0 42px 0;
   height: 32px;
 }
 
@@ -187,7 +185,7 @@ body {
   font-weight: 700;
   color: inherit;
   text-decoration: none;
-  margin: 0 16px 36.14px 16px;
+  margin: 0 16px 36px 16px;
 }
 
 .search-link {
@@ -196,13 +194,12 @@ body {
   height: 32px;
   border-radius: 27px;
   padding: 8px;
-  margin: 0 16px 36.14px 16px;
+  margin: 0 16px 36px 16px;
 }
 
 .entrance-link {
   display: block;
   width: 88px;
-  height: 32px;
   border-radius: 30px;
   padding: 6px 16px 6px 16px;
   gap: 6px;
@@ -210,12 +207,11 @@ body {
   font-size: 14px;
   line-height: 20px;
   text-align: left;
-  margin: 0 16px 36.14px 16px;
+  margin: 0 16px 36px 16px;
 }
 
 .cart-link {
   width: 115px;
-  height: 32px;
   border-radius: 30px;
   padding: 6px 16px 6px 16px;
   gap: 6px;
@@ -223,7 +219,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   text-align: left;
-  margin: 0 0 36.14px 0;
+  margin: 0 0 36px 0;
 }
 
 .main-container {
@@ -301,7 +297,6 @@ body {
 
 .offers-title {
   width: 434px;
-  height: 92px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -326,7 +321,6 @@ body {
 
 .offer-title {
   max-width: 254px;
-  height: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -343,13 +337,11 @@ body {
   text-align: left;
   vertical-align: top;
   width: 328px;
-  height: 66px;
 }
 
 .offer-button {
   display: block;
   width: 176px;
-  height: 44px;
   color: #2d3440;
   text-decoration: none;
   font-size: 16px;
@@ -359,21 +351,33 @@ body {
   background: #fcfcfc;
   border-radius: 26px;
   padding: 12px 32px;
-  margin: 0 0 36px 0;
 }
 
 .goods-item {
-  background-color: #fcfcfc;
+  position: relative;
   border-radius: 8px;
   width: 270px;
   margin: 0 30px 80px 0;
-  height: 281;
+  height: 332px;
+}
+
+.goods-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 51px);
+  border-radius: 8px;
+  z-index: -1;
+  background-color: #ffffff;
 }
 
 .picture {
+  display: block;
   width: 168px;
   height: 168px;
-  margin: 0 0 16px 51px;
+  margin: 0 auto 16px auto;
 }
 
 .good-title {
@@ -382,7 +386,7 @@ body {
   line-height: 46px;
   text-align: center;
   width: 527px;
-  margin: 0 0 56px 321.5px;
+  margin: 0 0 56px 322px;
 }
 
 .goods-list {
@@ -391,7 +395,7 @@ body {
 }
 
 .goods-content {
-  padding: 16px 40px 28px 40px;
+  padding: 0 40px 40px 40px;
 }
 
 .goods-title {
@@ -418,21 +422,26 @@ body {
   font-size: 20px;
   line-height: 24px;
   width: 85px;
-  height: 24px;
   margin: 0 0 28px 0;
 }
 
 .advantages {
-  padding: 56px 40px 56px 40px;
+  padding: 24px;
   color: #2d3440;
-  background-color: #ffffff;
   background-image: url("../images/background/vaffle.png");
+  background-size: cover;
   margin: 0 0 80px 0;
+  border-radius: 16px;
+}
+
+.advantages-content {
+  padding: 56px 40px 56px 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
 }
 
 .advantages-title {
-  margin: 0 0 56px 63.5px;
-  width: 995px;
+  margin: 0 0 56px 0;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -455,28 +464,34 @@ body {
 }
 
 .news-delivery {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 80px 0;
+  margin-bottom: 80px;
 }
 
 .news {
+  width: 570px;
   color: #565c66;
   background-color: #ffffff;
   background-image: url("../images/background/news.png");
-  width: 570px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
 }
 
 .news-content {
-  padding: 32.59px 235px 67.15px 32px;
+  display: block;
+  padding: 32px 235px 47px 32px;
 }
 
 .news-title {
+  color: #565c66;
   width: 170px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin: 0 0 12.22px 0;
+  margin: 0 0 12px 0;
 }
 
 .news-item {
@@ -488,12 +503,20 @@ body {
 }
 
 .subscription {
+  position: absolute;
+  right: 0;
   width: 570px;
-  background-color: #ffffff;
+  padding: 6px;
+  background-image: url("../images/background/subscription.png");
+  background-size: cover;
+  border-radius: 16px;
 }
 
 .subscription-content {
-  padding: 32px 32px 24px 32px;
+  display: block;
+  padding: 26px;
+  background-color: #ffffff;
+  border-radius: 16px;
 }
 
 .subscription-inner {
@@ -502,7 +525,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin: 26px 26px 44px 0;
+  text-align: left;
+  margin-bottom: 44px;
 }
 
 .form {
@@ -512,9 +536,7 @@ body {
 
 .subscription-form {
   width: 332px;
-  height: 48px;
   border-radius: 4px;
-  margin: 0 0 34px 0;
 }
 
 .subscription-text {
@@ -522,31 +544,32 @@ body {
   font-size: 16px;
   line-height: 20px;
   width: 156px;
-  margin: 0 0 14px 0;
   padding: 14px 160px 14px 16px;
 }
 
 .button-submit {
   padding: 12px 32px;
-  margin-left: 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  height: 44px;
 }
 
 .delivery {
   color: #2d3440;
-  background-color: #ffffff;
+  background-color: #f6f6f7;
   background-image: url("../images/background/delivery.png");
+  background-position: right top;
   border-radius: 16px;
-  width: 1170px;
-  height: 534px;
   margin: 0 0 80px 0;
-}
-
-.delivery-items {
+  padding: 64px 64px 64px 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
 }
 
 .delivery-content {
-  padding: 167px 135px 163px 100px;
+  margin: 103px 100px 0 0;
 }
 
 .delivery-title {
@@ -559,20 +582,18 @@ body {
 
 .delivery-item {
   width: 371px;
-  height: 88px;
   color: #565c66;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin: 0 0 163px 0;
+  margin: 0;
 }
 
 .delivery-form {
   width: 500px;
-  height: 406px;
   background-color: #fcfcfc;
   border-radius: 8px;
-  margin: 64px 64px 64px 0;
+  padding: 40px 40px 42px 40px;
 }
 
 .delivery-form-description {
@@ -580,9 +601,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #565c66;
-  margin: 40px 80px 32px 40px;
   width: 380px;
-  height: 44px;
 }
 
 .appointment-form {
@@ -602,17 +621,17 @@ body {
 .contacts {
   display: flex;
   width: 1170px;
-  height: 492px;
   border-radius: 16px;
   margin: 0 0 48px 0;
   color: #2d3440;
   background-color: #ffffff;
   background-image: url("../images/background/feedback.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contacts-block {
   width: 343px;
-  height: 364px;
   border-radius: 8px;
   background-color: #fcfcfc;
   padding: 40px 40px 42px 40px;
@@ -621,7 +640,6 @@ body {
 
 .text-description {
   width: 179px;
-  height: 44px;
   margin: 0 0 12px 0;
   font-weight: 400;
   font-size: 16px;
@@ -637,7 +655,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   width: 263px;
-  height: 48px;
   margin: 0 0 24px 0;
   text-align: left;
   color: #2d3440;
@@ -651,7 +668,6 @@ body {
   text-align: left;
   vertical-align: top;
   width: 203px;
-  height: 22px;
   margin: 0 0 12px 0;
 }
 
@@ -662,7 +678,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   width: 225px;
-  height: 24px;
   text-align: left;
   vertical-align: top;
   margin: 0 0 0 0;
@@ -676,16 +691,13 @@ body {
   text-align: left;
   vertical-align: top;
   width: 160px;
-  height: 20px;
   margin: 0 0 32px 0;
 }
 
 .button-feedback {
   display: block;
   padding: 12px 32px;
-  margin: 0 0 42px 0;
   width: 250px;
-  height: 44px;
   border-radius: 26px;
 }
 
@@ -728,14 +740,13 @@ body {
 .footer-logo-picture {
   display: block;
   width: 93px;
-  height: 26.71px;
-  margin: 0 0 14.29px 0;
+  height: 26px;
+  margin: 0 0 14px 0;
 }
 
 .about-text {
   display: inline-block;
   width: 193px;
-  height: 16px;
   margin: 0 0 48px 0;
   font-weight: 400px;
   font-size: 12px;
@@ -748,13 +759,17 @@ body {
 }
 
 .breadcrumbs {
+  width: 379px;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.breadcrumbs-list {
   width: 335px;
-  height: 20px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   margin: 0 0 16px 0;
-  margin-right: 0 auto;
 }
 
 .breadcrumbs-item {
@@ -775,18 +790,17 @@ body {
 }
 
 .creamy-ice {
-  width: 379px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   color: #2d3440;
-  margin: 0 0 40px 0;
   text-align: left;
 }
 
 .creamy-ice-filter {
   width: 823px;
-  margin: 40px 445px 44px 0;
+  margin: 0 445px 46px 0;
+  padding: 0;
 }
 
 .filter-group {
@@ -796,16 +810,19 @@ body {
   color: inherit;
 }
 
+.filter-list {
+  list-style-type: none;
+}
+
 .filter-button {
+  display: block;
   width: 185px;
   border-radius: 20px;
   padding: 8px 32px;
-  margin: 0 0 46px 0;
 }
 
 .pagination-container {
   display: flex;
-  height: 126px;
 }
 
 .pagination-show-more {
