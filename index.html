@@ -184,8 +184,10 @@
                 <p class="goods-description">
                   Сливочное мороженое с малиновым джемом
                 </p>
-                <span class="goods-price">310 ₽/кг</span>
-                <button class="cart-button" type="button">Корзина</button>
+                <div class="price-cart">
+                  <span class="goods-price">310 ₽/кг</span>
+                  <button class="cart-button" type="button"></button>
+                </div>
               </div>
             </li>
             <li class="goods-item">
@@ -195,8 +197,10 @@
                 <p class="goods-description">
                   Фисташковый пломбир с кусочками шоколада
                 </p>
-                <span class="goods-price">340 ₽/кг</span>
-                <button class="cart-button" type="button">Корзина</button>
+                <div class="price-cart">
+                  <span class="goods-price">340 ₽/кг</span>
+                  <button class="cart-button" type="button"></button>
+                </div>
               </div>
             </li>
             <li class="goods-item">
@@ -204,8 +208,10 @@
               <div class="goods-content">
                 <h3 class="goods-title">Черника</h3>
                 <p class="goods-description">Крем-брюле с черничным джемом</p>
-                <span class="goods-price">330 ₽/кг</span>
-                <button class="cart-button" type="button">Корзина</button>
+                <div class="price-cart">
+                  <span class="goods-price">330 ₽/кг</span>
+                  <button class="cart-button" type="button"></button>
+                </div>
               </div>
             </li>
             <li class="goods-item">
@@ -215,8 +221,10 @@
                 <p class="goods-description">
                   Ванильный пломбир со сладкой посыпкой
                 </p>
-                <span class="goods-price">320 ₽/кг</span>
-                <button class="cart-button" type="button">Корзина</button>
+                <div class="price-cart">
+                  <span class="goods-price">320 ₽/кг</span>
+                  <button class="cart-button" type="button"></button>
+                </div>
               </div>
             </li>
           </ul>
@@ -234,13 +242,13 @@
               технологий.
             </li>
             <li class="advantages-item">
+              Закупка ингридиентов производится только у проверенных фермерских
+              хозяйств, с которыми нас связывает долговременное сотрудничество.
+            </li>
+            <li class="advantages-item">
               Для приготовления мороженого используются сливки и молоко
               высочайшего качества. Все ингридиенты и добавки произведены из
               натурального сырья.
-            </li>
-            <li class="advantages-item">
-              Закупка ингридиентов производится только у проверенных фермерских
-              хозяйств, с которыми нас связывает долговременное сотрудничество.
             </li>
             <li class="advantages-item">
               Доставка нашего мороженого осуществляется в специальном термопаке,
@@ -252,12 +260,10 @@
         </section>
         <div class="news-delivery">
           <section class="news">
-            <div class="news-content">
               <h2 class="news-title">Новое в нашем блоге</h2>
               <h3 class="news-item">
                 10 способов сервировки фруктовых щербетов к столу
               </h3>
-            </div>
           </section>
           <section class="subscription">
             <div class="subscription-content">
@@ -268,7 +274,7 @@
               </p>
               <div class="form">
                 <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label>
+                  <label class="subscription-group">
                     <input type="subscription-text" name="e-mail" placeholder="email@example.com">
                     <span class="visually-hidden">e-mail.</span>
                   </label>
@@ -298,24 +304,32 @@
               </p>
               <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="appointment-form-date">
-                  <label>
-                    <span class="appointment-date">Дата</span>
+                  <label class="field-group">
+                    <span class="appointment-date">Дата
+                      <button class="info">
+                        <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                      </button>
+                    </span>
                     <input type="text" name="appointment-date" placeholder="01.04.2020">
                   </label>
                 </div>
                 <div class="appointment-form-phone">
-                  <label>
+                  <label class="field-group">
                     <span class="appointment-phone-form">Телефон</span>
                     <input type="text" name="appointment-phone" placeholder="+7 999-00-00">
                   </label>
                 </div>
                 <div class="appointment-form-adress">
-                  <label>
-                    <span class="appointment-adress">Адрес</span>
+                  <label class="field-group">
+                    <span class="appointment-adress">Адрес
+                      <button class="info">
+                        <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                      </button>
+                    </span>
                     <input type="text" name="appointment-adress" placeholder="ул. Большая Конюшенная, 19/8">
                   </label>
                 </div>
-                <button class="button button-submit" type="submit">
+                <button class="button appointment-submit" type="submit">
                   Отправить
                 </button>
               </form>
