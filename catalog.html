@@ -9,23 +9,22 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="header-logo" href="#">
-            <img
-              class="logo"
-              src="images/icons/logo.svg"
-              width="137"
-              height="56"
-              alt="Логотип Глейси.">
+          <a class="header-logo" href="index.html">
+            <img class="logo" src="images/icons/logo.svg" width="137" height="56" alt="Логотип Глейси.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <button class="navigation-link catalog-link" type="button">
                 Каталог
                 <svg class="navigation-icon"
-                aria-hidden="true"
-                focusable="false" width="12" height="7" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1.05A.67.67 0 0 0 .88 2l4.66 4.66a.66.66 0 0 0 .95 0L11.14 2a.67.67 0 0 0-.94-.95L6 5.25l-4.2-4.2Z" fill="#2D3440"/></svg>
+                 aria-hidden="true"
+                 focusable="false"
+                 width="12" height="7"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" clip-rule="evenodd"
+                 d="M1.8 1.05A.67.67 0 0 0 .88 2l4.66 4.66a.66.66 0 0 0 .95 0L11.14 2a.67.67 0 0 0-.94-.95L6 5.25l-4.2-4.2Z"></svg>
               </button>
-                <ul class="subcatalog">
+                <ul class="sub-catalog">
                   <li class="submenu-item new-in">
                     <a class="submenu-link new-in" href="#">Новинки</a>
                   </li>
@@ -50,12 +49,11 @@
               <a class="navigation-link" href="#">О компании</a>
             </li>
           </ul>
-          <div class="navigation-user-block">
             <ul class="navigation-list navigation-user">
               <li class="navigation-user">
                 <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
               </li>
-              <li class="navigation-user">
+              <li class="navigation-user search">
                 <button class="search-link" type="button">
                   <svg
                     class="navigation-icon"
@@ -68,12 +66,11 @@
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
-                      d="M10.66 16.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
-                      fill="#2D3440">
+                      d="M10.66 16.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z">
                   </svg>
                   <span class="visually-hidden">Поиск.</span>
                 </button>
-                <div class="popover-search popover-search-open">
+                <div class="popover-search">
                   <form
                     class="popover-form"
                     action="https://echo.htmlacademy.ru"
@@ -91,7 +88,7 @@
                     </form>
                 </div>
               </li>
-              <li class="navigation-user">
+              <li class="navigation-user entrance">
                 <button class="entrance-link" type="button">
                   <svg
                     class="navigation-icon"
@@ -104,13 +101,11 @@
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
-                      d="M8 1.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2.86a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 1.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.67.67 0 0 1 .2.47.66.66 0 0 1-.2.48L5.8 11.33a.67.67 0 1 1-.94-.94l2.2-2.2H.66a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
-                      fill="#2D3440">
+                      d="M8 1.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2.86a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 1.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.67.67 0 0 1 .2.47.66.66 0 0 1-.2.48L5.8 11.33a.67.67 0 1 1-.94-.94l2.2-2.2H.66a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z">
                   </svg>
                   Вход
                 </button>
-              </li>
-              <div class="popover-entrance popover-entrance-open">
+              <div class="popover-entrance">
                 <div class="popover-content">
                   <h2 class="popover-entrance-title">Личный кабинет</h2>
                   <form
@@ -147,25 +142,12 @@
                   </form>
                 </div>
               </div>
-              <li class="navigation-user">
+            </li>
+              <li class="navigation-user cart">
                 <button class="cart-link" type="button">
-                  <svg
-                    class="navigation-icon"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="16"
-                    height="17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
-                    fill="#2D3440">
-                  </svg>
-                    2 товара
+                2 товара
                 </button>
-                <div class="popover-full popover-cart popover-open">
+                <div class="popover-full popover-cart">
                   <div class="popover-content">
                     <h2 class="popover-title">Корзина</h2>
                     <ul class="cart-items-list">
@@ -194,14 +176,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="popover-empty popover-empty-cart popover-empty-open">
+                <div class="popover-empty popover-empty-cart">
                   <div class="popover-content">
                     <h2 class="popover-empty-title">Ваша корзина пока пуста</h2>
                   </div>
                 </div>
               </li>
             </ul>
-          </div>
         </nav>
       </header>
       <main class="main-container main-index">
@@ -815,7 +796,6 @@
           </ul>
         </div>
       </main>
-      <hr>
       <footer class="page-footer">
         <ul class="footer-social-list">
           <li class="footer-social-item telegram">
